@@ -1,0 +1,32 @@
+#portraitGallery{
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+    justify-content:center;
+}
+
+.portrait-card{
+    width:180px;
+}
+
+.portrait-card img{
+    width:100%;
+    display:block;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    transition:
+        transform .25s ease,
+        box-shadow .25s ease,
+        border-radius .25s ease;
+}
+
+.portrait-card img:hover{
+
+    transform:scale(1.05);
+
+    box-shadow:0 8px 22px rgba(0,0,0,.35);
+
+}
