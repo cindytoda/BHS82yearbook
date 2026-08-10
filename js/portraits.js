@@ -16,9 +16,23 @@ fetch("data/students.json")
             card.className = "portrait-card";
 
             const img = document.createElement("img");
-            img.src = "portraits/" + student.file;
+
+            const normalImage = "portraits/" + student.file;
+            const colorizedImage = "colorized/" + student.file;
+
+            img.src = normalImage;
             img.alt = student.full_name;
             img.title = student.full_name;
+
+            // Change to colorized image when mouse enters
+            card.addEventListener("mouseenter", function () {
+                img.src = colorizedImage;
+            });
+
+            // Change back to black & white when mouse leaves
+            card.addEventListener("mouseleave", function () {
+                img.src = normalImage;
+            });
 
             card.appendChild(img);
 
