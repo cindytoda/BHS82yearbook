@@ -1,32 +1,45 @@
-#portraitGallery{
-    display:flex;
-    flex-wrap:wrap;
-    gap:20px;
-    justify-content:center;
+/* Portrait page background move the location of plaque with center xxpx */
+
+body {
+    background-image:
+        linear-gradient(rgba(255,255,255,0.45), rgba(255,255,255,0.45)),
+        url("../portraits/BHS_plaque.png");
+
+    background-size: 67% auto;
+    background-position: center 22px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 
-.portrait-card{
-    width:180px;
+#article12-j {
+    background-color: transparent !important;
+    background-image: none !important;
+    padding-top: 120px !important;
 }
 
-.portrait-card img{
-    width:100%;
-    display:block;
+#portraitGallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
 
-    border-radius:8px;
+.portrait-card {
+    width: 180px;
+}
 
-    cursor:pointer;
-
+.portrait-card img {
+    width: 100%;
+    display: block;
+    border-radius: 8px;
+    cursor: pointer;
     transition:
         transform .25s ease,
         box-shadow .25s ease,
         border-radius .25s ease;
 }
 
-.portrait-card img:hover{
-
-    transform:scale(1.05);
-
-    box-shadow:0 8px 22px rgba(0,0,0,.35);
-
+.portrait-card img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 22px rgba(0,0,0,.35);
 }
