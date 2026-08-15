@@ -156,75 +156,230 @@
 	</div>
 </section>
 
-<section data-bs-version="5.1" class="slider05 cid-vqCyZ8UNTB" id="slider05-f">
-    
+<!-- CUSTOM REUNION SLIDESHOW -->
+<section id="reunion-slideshow">
 
     <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-12 col-md-8">
-                <div class="carousel slide carousel-fade" id="vrVxeoVwBZ" data-ride="carousel" data-bs-ride="carousel" data-interval="6000" data-bs-interval="6000">
-                    <ol class="carousel-indicators">
-                        <li data-slide-to="0" data-bs-slide-to="0" class="active" data-target="#vrVxeoVwBZ" data-bs-target="#vrVxeoVwBZ"></li><li data-slide-to="1" data-bs-slide-to="1" class="" data-target="#vrVxeoVwBZ" data-bs-target="#vrVxeoVwBZ"></li><li data-slide-to="2" data-bs-slide-to="2" class="" data-target="#vrVxeoVwBZ" data-bs-target="#vrVxeoVwBZ"></li><li data-slide-to="3" data-bs-slide-to="3" class="" data-target="#vrVxeoVwBZ" data-bs-target="#vrVxeoVwBZ"></li><li data-slide-to="4" data-bs-slide-to="4" class="" data-target="#vrVxeoVwBZ" data-bs-target="#vrVxeoVwBZ"></li><li data-slide-to="5" data-bs-slide-to="5" class="" data-target="#vrVxeoVwBZ" data-bs-target="#vrVxeoVwBZ"></li><li data-slide-to="6" data-bs-slide-to="6" class="" data-target="#vrVxeoVwBZ" data-bs-target="#vrVxeoVwBZ"></li><li data-slide-to="7" data-bs-slide-to="7" class="" data-target="#vrVxeoVwBZ" data-bs-target="#vrVxeoVwBZ"></li><li data-slide-to="8" data-bs-slide-to="8" class="" data-target="#vrVxeoVwBZ" data-bs-target="#vrVxeoVwBZ"></li>
-                        
-                        
-                    </ol>
-                    <div class="carousel-inner">
-                        
-                        
-                        <div class="carousel-item slider-image item active">
-                            <div class="item-wrapper">
-                                
-                                <img class="d-block w-100" src="assets/images/photo-2026-06-28-21-58.jpg" alt="Mobirise Website Builder" data-slide-to="0" data-bs-slide-to="0">
-                            </div>
-                        </div><div class="carousel-item slider-image item">
-                            <div class="item-wrapper">
-                                
-                                <img class="d-block w-100" src="assets/images/photo-2026-07-04-19-14.jpg" alt="Mobirise Website Builder" data-slide-to="1" data-bs-slide-to="1">
-                            </div>
-                        </div><div class="carousel-item slider-image item">
-                            <div class="item-wrapper">
-                                
-                                <img class="d-block w-100" src="assets/images/photo-2026-06-13-11-57.jpg" alt="Mobirise Website Builder" data-slide-to="2" data-bs-slide-to="2">
-                            </div>
-                        </div><div class="carousel-item slider-image item">
-                            <div class="item-wrapper">
-                                
-                                <img class="d-block w-100" src="assets/images/photo-2026-07-05-14-50.jpg" alt="Mobirise Website Builder" data-slide-to="3" data-bs-slide-to="3">
-                            </div>
-                        </div><div class="carousel-item slider-image item">
-                            <div class="item-wrapper">
-                                
-                                <img class="d-block w-100" src="assets/images/photo-2026-07-24-16-45.jpg" alt="Mobirise Website Builder" data-slide-to="4" data-bs-slide-to="4">
-                            </div>
-                        </div><div class="carousel-item slider-image item">
-                            <div class="item-wrapper">
-                                
-                                <img class="d-block w-100" src="assets/images/photo-2026-07-24-16-44.jpg" alt="Mobirise Website Builder" data-slide-to="5" data-bs-slide-to="5">
-                            </div>
-                        </div><div class="carousel-item slider-image item">
-                            <div class="item-wrapper">
-                                
-                                <img class="d-block w-100" src="assets/images/photo-2026-07-06-08-49.jpg" alt="Mobirise Website Builder" data-slide-to="6" data-bs-slide-to="6">
-                            </div>
-                        </div><div class="carousel-item slider-image item">
-                            <div class="item-wrapper">
-                                
-                                <img class="d-block w-100" src="assets/images/ctkprcplus.jpg" alt="Mobirise Website Builder" data-slide-to="7" data-bs-slide-to="7">
-                            </div>
-                        </div><div class="carousel-item slider-image item">
-                            <div class="item-wrapper">
-                                
-                                <img class="d-block w-100" src="assets/images/photo-2026-07-24-01-12.jpg" alt="Mobirise Website Builder" data-slide-to="8" data-bs-slide-to="8">
-                            </div>
-                        </div>
-                    </div>
-                    
-                    
-                </div>
-            </div>
+
+        <div class="reunion-selector">
+            <button onclick="loadReunion('10th_reunion')">10th Reunion</button>
+            <button onclick="loadReunion('20th_reunion')">20th Reunion</button>
+            <button onclick="loadReunion('25th_reunion')">25th Reunion</button>
         </div>
+
+        <div class="slideshow-frame">
+            <img id="slideshow-image" src="" alt="10th Reunion photo">
+        </div>
+
+        <div class="slideshow-controls">
+            <button id="previous-button">‹ Previous</button>
+            <button id="pause-button">Pause</button>
+            <button id="next-button">Next ›</button>
+        </div>
+
+        <div id="slideshow-counter"></div>
+
     </div>
-</section><section class="display-7" style="padding: 0;align-items: center;justify-content: center;flex-wrap: wrap;    align-content: center;display: flex;position: relative;height: 4rem;"><a href="https://mobiri.se/" style="flex: 1 1;height: 4rem;position: absolute;width: 100%;z-index: 1;"><img alt="" style="height: 4rem;" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="></a><p style="margin: 0;text-align: center;" class="display-7">&#8204;</p><a style="z-index:1" href="https://mobirise.com/offline-website-builder.html">Offline Website Builder</a></section><script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>  <script src="assets/smoothscroll/smooth-scroll.js"></script>  <script src="assets/ytplayer/index.js"></script>  <script src="assets/dropdown/js/navbar-dropdown.js"></script>  <script src="assets/theme/js/script.js"></script>  
+
+</section>
+
+<style>
+
+#reunion-slideshow {
+    padding: 40px 20px 60px;
+}
+
+.reunion-slideshow-title {
+    text-align: center;
+    margin-bottom: 25px;
+    font-family: inherit;
+    font-size: 24px;
+    font-weight:bold;
+}
+
+.reunion-selector {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.reunion-selector button {
+    margin: 0 5px;
+    padding: 7px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.reunion-selector button:hover {
+    opacity: 0.8;
+}
+.slideshow-frame {
+    width: 100%;
+    max-width: 630px;
+    height: 420px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+#slideshow-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.slideshow-controls {
+    text-align: center;
+    margin-top: 5px;
+}
+
+.slideshow-controls button {
+    margin: 0 5px;
+    padding: 8px 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#slideshow-counter {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+@media (max-width: 600px) {
+
+    .slideshow-frame {
+        height: 400px;
+    }
+
+    .slideshow-controls button {
+        padding: 7px 12px;
+        font-size: 14px;
+    }
+
+}
+
+</style>
+
+<script>
+
+let slideshowImages = [];
+let currentImage = 0;
+let slideshowTimer;
+let slideshowPaused = false;
+
+const imageElement = document.getElementById("slideshow-image");
+const counterElement = document.getElementById("slideshow-counter");
+const pauseButton = document.getElementById("pause-button");
+
+
+let currentReunion = "10th_reunion";
+
+function loadReunion(reunion) {
+
+    currentReunion = reunion;
+
+    fetch("slideshows/" + reunion + ".json")
+        .then(response => response.json())
+        .then(images => {
+
+            slideshowImages = images;
+
+            if (slideshowImages.length > 0) {
+                showImage(0);
+            }
+
+        })
+        .catch(error => {
+            console.error("Could not load slideshow:", error);
+            counterElement.textContent = "Unable to load reunion photos.";
+        });
+}
+
+
+// Load the 10th Reunion when the page opens
+loadReunion("10th_reunion");
+
+// Display an image
+function showImage(index) {
+
+    currentImage = index;
+
+    const filename = slideshowImages[currentImage];
+
+    imageElement.src = "slideshows/" + currentReunion + "/" + encodeURIComponent(filename);
+
+    counterElement.textContent =
+        (currentImage + 1) + " of " + slideshowImages.length;
+}
+
+
+// Next image
+function nextImage() {
+
+    currentImage++;
+
+    if (currentImage >= slideshowImages.length) {
+        currentImage = 0;
+    }
+
+    showImage(currentImage);
+}
+
+
+// Previous image
+function previousImage() {
+
+    currentImage--;
+
+    if (currentImage < 0) {
+        currentImage = slideshowImages.length - 1;
+    }
+
+    showImage(currentImage);
+}
+
+
+// Start automatic slideshow
+function startSlideshow() {
+
+    slideshowTimer = setInterval(function() {
+
+        if (!slideshowPaused) {
+            nextImage();
+        }
+
+    }, 5000);
+
+}
+
+
+// Pause / resume
+pauseButton.addEventListener("click", function() {
+
+    slideshowPaused = !slideshowPaused;
+
+    pauseButton.textContent =
+        slideshowPaused ? "Play" : "Pause";
+
+});
+
+
+// Button controls
+document.getElementById("next-button")
+    .addEventListener("click", nextImage);
+
+document.getElementById("previous-button")
+    .addEventListener("click", previousImage);
+
+</script>
+
+<section class="display-7" style="padding: 0;align-items: center;justify-content: center;flex-wrap: wrap;    align-content: center;display: flex;position: relative;height: 4rem;"><a href="https://mobiri.se/" style="flex: 1 1;height: 4rem;position: absolute;width: 100%;z-index: 1;"><img alt="" style="height: 4rem;" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="></a><p style="margin: 0;text-align: center;" class="display-7">&#8204;</p><a style="z-index:1" href="https://mobirise.com/offline-website-builder.html">Offline Website Builder</a></section><script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>  <script src="assets/smoothscroll/smooth-scroll.js"></script>  <script src="assets/ytplayer/index.js"></script>  <script src="assets/dropdown/js/navbar-dropdown.js"></script>  <script src="assets/theme/js/script.js"></script>  
   
   
 </body>
