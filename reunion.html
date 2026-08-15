@@ -284,7 +284,7 @@ function loadReunion(reunion) {
 
     currentReunion = reunion;
 
-    fetch("slideshows/" + Reunion + ".json")
+    fetch("slideshows/" + reunion + ".json")
         .then(response => response.json())
         .then(images => {
 
@@ -311,6 +311,10 @@ function showImage(index) {
     currentImage = index;
 
     const filename = slideshowImages[currentImage];
+
+    console.log("Reunion:", currentReunion);
+    console.log("Filename:", filename);
+    console.log("Image path:", "slideshows/" + currentReunion + "/" + encodeURIComponent(filename));
 
     imageElement.src = "slideshows/" + currentReunion + "/" + encodeURIComponent(filename);
 
