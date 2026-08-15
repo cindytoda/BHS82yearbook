@@ -162,9 +162,9 @@
     <div class="container">
 
         <div class="reunion-selector">
-            <button onclick="loadReunion('10th_reunion')">10th Reunion</button>
-            <button onclick="loadReunion('20th_reunion')">20th Reunion</button>
-            <button onclick="loadReunion('25th_reunion')">25th Reunion</button>
+            <button onclick="loadReunion('10th_Reunion')">10th Reunion</button>
+            <button onclick="loadReunion('20th_Reunion')">20th Reunion</button>
+            <button onclick="loadReunion('25th_Reunion')">25th Reunion</button>
         </div>
 
         <div class="slideshow-frame">
@@ -278,13 +278,13 @@ const counterElement = document.getElementById("slideshow-counter");
 const pauseButton = document.getElementById("pause-button");
 
 
-let currentReunion = "10th_reunion";
+let currentReunion = "10th_Reunion";
 
 function loadReunion(reunion) {
 
     currentReunion = reunion;
 
-    fetch("slideshows/" + reunion + ".json")
+    fetch("slideshows/" + Reunion + ".json")
         .then(response => response.json())
         .then(images => {
 
@@ -303,7 +303,7 @@ function loadReunion(reunion) {
 
 
 // Load the 10th Reunion when the page opens
-loadReunion("10th_reunion");
+loadReunion("10th_Reunion");
 
 // Display an image
 function showImage(index) {
