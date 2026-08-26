@@ -2,7 +2,7 @@
   {
     "name": "KATHY BALENT",
     "image": "obituaries/Balent_Kathryn.jpg",
-    "born": "",
+    "born": "August 24, 1964",
     "died": "December 4, 2017",
     "story": "obituaries/Balent_Kathy_obit.jpg"
   },
@@ -94,7 +94,7 @@
     "name": "GERMAN PENALVER",
     "image": "obituaries/Penalver_German.jpg",
     "born": "December 14, 1963",
-    "died": "2018",
+    "died": "January 2018",
     "story": ""
   },
   {
@@ -122,7 +122,7 @@
     "name": "MICHAEL WARD",
     "image": "obituaries/Ward_Michael.jpg",
     "born": "June 24, 1964",
-    "died": "2024",
+    "died": "March 23, 2024",
     "story": ""
   },
   {
@@ -138,5 +138,12 @@
     "born": "November 19, 1963",
     "died": "",
     "story": ""
+  },
+  {
+    "name": "CELIA WALDRON",
+    "image": "obituaries/Waldron_Celia.jpg",
+    "born": "October 3, 1964",
+    "died": "September 20, 2015",
+    "story": "obituaries/Waldron_Celia_obit.jpg"
   }
 ]
